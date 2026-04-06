@@ -425,8 +425,6 @@ public class Helper
 
         if (Configs.Instance.HideBloodAndHsSpark)
         {
-            MainPlugin.Instance.HookUserMessage(400, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
-            MainPlugin.Instance.HookUserMessage(411, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
             MainPlugin.Instance.HookUserMessage(201, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
         }
 
@@ -515,10 +513,7 @@ public class Helper
         MainPlugin.Instance.RemoveCommandListener("playerchatwheel", MainPlugin.Instance.Game_Listeners.BlockChatwheel_Listener, HookMode.Pre);
         MainPlugin.Instance.RemoveCommandListener("player_ping", MainPlugin.Instance.Game_Listeners.BlockPing_Listener, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(118, MainPlugin.Instance.OnUserMessage_OnSayText2, HookMode.Pre);
-        MainPlugin.Instance.UnhookUserMessage(400, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
-        MainPlugin.Instance.UnhookUserMessage(411, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(201, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
-        MainPlugin.Instance.UnhookUserMessage(208, MainPlugin.Instance.Game_UserMessages.MuteSounds_UserMessages, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(369, MainPlugin.Instance.Game_UserMessages.MuteSounds_WeaponSound, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(452, MainPlugin.Instance.Game_UserMessages.MuteGunShots_UserMessages, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(124, MainPlugin.Instance.Game_UserMessages.Ignore_TextMsg_UserMessages, HookMode.Pre);
