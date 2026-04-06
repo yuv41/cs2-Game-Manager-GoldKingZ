@@ -427,6 +427,7 @@ public class Helper
         {
             MainPlugin.Instance.HookUserMessage(400, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
             MainPlugin.Instance.HookUserMessage(411, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
+            MainPlugin.Instance.HookUserMessage(201, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
         }
 
         if (Configs.Instance.Custom_MuteSounds_1.Custom_MuteSounds1 > 0 || Configs.Instance.Custom_MuteSounds_2.Custom_MuteSounds2 > 0 || Configs.Instance.Custom_MuteSounds_3.Custom_MuteSounds3 > 0
@@ -516,6 +517,7 @@ public class Helper
         MainPlugin.Instance.UnhookUserMessage(118, MainPlugin.Instance.OnUserMessage_OnSayText2, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(400, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(411, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
+        MainPlugin.Instance.UnhookUserMessage(201, MainPlugin.Instance.Game_UserMessages.HideBloodAndHsSpark_UserMessages, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(208, MainPlugin.Instance.Game_UserMessages.MuteSounds_UserMessages, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(369, MainPlugin.Instance.Game_UserMessages.MuteSounds_WeaponSound, HookMode.Pre);
         MainPlugin.Instance.UnhookUserMessage(452, MainPlugin.Instance.Game_UserMessages.MuteGunShots_UserMessages, HookMode.Pre);
